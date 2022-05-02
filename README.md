@@ -1,4 +1,4 @@
-# Pokemon Memory Game
+# Pokemon&copy; Memory Game
 
 This is a simple Pokemon&copy; memory game built with React and Typescript.
 
