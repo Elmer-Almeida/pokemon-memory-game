@@ -14,4 +14,4 @@ npm start
 
 ### Contact
 
-If you have any questions or concerns, [send me an email](mailto:elmer.dev.95@gmail.com).
+If you have any questions or concerns, [send me an email](mailto:almeielm@sheridancollege.ca).
