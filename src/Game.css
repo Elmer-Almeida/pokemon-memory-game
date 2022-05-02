@@ -1,0 +1,91 @@
+/* game */
+.game {
+  width: 820px;
+  margin: auto;
+}
+
+/* colors */
+.error-red {
+  color: #cd0000;
+}
+.success-green {
+  color: #266435;
+}
+
+/* card */
+.card__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  position: relative;
+}
+
+.card .card__front {
+  position: absolute;
+  transform: rotateY(90deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.card .card__flipped .card__front {
+  transform: rotateY(0deg);
+  transition: all 0.2s ease-in;
+  transition-delay: 0.2s;
+}
+
+.card .card__flipped .card__back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+.card .card__back {
+  transition: all 0.2s ease-in;
+  transition-delay: 0.2s;
+}
+
+/* buttons */
+button.reveal-cards-button {
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #1869ca;
+  transition: all 0.2s ease-in-out;
+}
+button.reveal-cards-button:hover {
+  background-color: #79589f;
+  cursor: pointer;
+}
+
+/* options */
+.game-options {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 3px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.game-options__separator {
+  margin-top: 30px;
+}
+.game-options__points {
+  color: #333333;
+  font-size: 18px;
+  align-self: center;
+}
+.game-options__turns {
+  color: #333333;
+  font-size: 18px;
+  align-self: center;
+}
+
+/* game over */
+.game-over {
+  font-weight: bold;
+  text-transform: uppercase;
+}

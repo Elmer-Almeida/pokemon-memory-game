@@ -1,0 +1,66 @@
+/* general */
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color :#f7f4fb;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* header */
+h1.headline {
+  color: #333333;
+  text-align: center;
+}
+p.about {
+  color: #333333;
+  text-align: center;
+}
+
+/* buttons */
+.new-game-button {
+  margin: 25px auto;
+  display: block;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #79589f;
+  transition: all 0.2s ease-in-out;
+}
+
+.new-game-button:hover {
+  cursor: pointer;
+  background-color: #3a2878;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    background-color: #202529;
+    color: #f9f9fb;
+    height: 100%;
+    width: 100%;
+}
+footer > p {
+    margin: 0;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: normal;
+}
+footer > p > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer > p > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
