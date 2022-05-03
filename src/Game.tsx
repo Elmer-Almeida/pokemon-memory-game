@@ -97,6 +97,10 @@ const Game: React.FC = () => {
     setTurns((prevTurns) => prevTurns + 1);
   };
 
+  /**
+   * check if the first and second choice are provided
+   * check if the first and second choice are the same
+   */
   useEffect(() => {
     if (firstChoice && secondChoice) {
       setDisabled(true);
@@ -139,13 +143,16 @@ const Game: React.FC = () => {
     setPoints(0);
   };
 
+  /**
+   * check if there are remaining cards to flip over and set game over state based on that
+   */
   useEffect(() => {
     let remaining = 0;
     cards?.map((card) => {
       return !card.matched ? remaining++ : remaining;
     });
     if (gameStarted && remaining == 0) {
-      setGameOver(true)
+      setGameOver(true);
     }
   }, [cards]);
 
@@ -175,8 +182,12 @@ const Game: React.FC = () => {
         )}
 
         {gameOver && (
-          <span className={revealed ? 'error-red game-over' : 'game-over success-green'}>
-            {revealed ? 'Game Over!!!' : 'Yay! You Won!!!'}
+          <span
+            className={
+              revealed ? 'error-red game-over' : 'game-over success-green'
+            }
+          >
+            {revealed ? 'Game Over' : 'You Won'}
           </span>
         )}
       </div>

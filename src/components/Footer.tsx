@@ -3,8 +3,8 @@ const Footer: React.FC = () => {
     <footer>
       <p>
         Created by Elmer Almeida&nbsp;&middot;&nbsp;
-        <a href='mailto:elmer.dev.95@gmail.com?subject=Pokemon Memory Game Inquiry' title='Send me a message'>
-          elmer.dev.95@gmail.com
+        <a href='mailto:almeielm@sheridancollege.ca?subject=Pokemon Memory Game Inquiry' title='Send me a message'>
+          almeielm@sheridancollege.ca
         </a>
       </p>
     </footer>

@@ -9,6 +9,7 @@ const App: React.FC = () => {
       <div className='content'>
         <h1 className='headline'>Memory Game</h1>
         <p className="about">A simple Pokemon<sup><small>&copy;</small></sup> game application made with React and Typescript.</p>
+        <p className="warning"><span className="bold">Note: </span>This application is not optimized for mobile devices.</p>
         <Game />
       </div>
       <Footer />

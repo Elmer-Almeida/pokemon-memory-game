@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
 /* general */
 body {
   margin: 0;
@@ -17,10 +19,19 @@ body {
 h1.headline {
   color: #333333;
   text-align: center;
+  font-family: 'Dancing Script';
 }
 p.about {
   color: #333333;
   text-align: center;
+}
+p.warning {
+  color: #333333;
+  text-align: center
+}
+p.warning span.bold {
+  font-weight: bold;
+  color: #cd0000;
 }
 
 /* buttons */

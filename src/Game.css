@@ -22,6 +22,20 @@
 
 .card {
   position: relative;
+  transform: rotateY(0deg);
+  transform: rotateX(0deg);
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.2s;
+}
+.card:hover {
+  cursor: pointer;
+  transform: rotateY(-20deg);
+  transform: rotateX(-20deg);
+}
+
+.card img:hover {
+  border: none;
+  outline: none;
 }
 
 .card .card__front {
@@ -32,6 +46,7 @@
 
 .card .card__flipped .card__front {
   transform: rotateY(0deg);
+  transform: rotateX(0deg);
   transition: all 0.2s ease-in;
   transition-delay: 0.2s;
 }
@@ -44,6 +59,12 @@
 .card .card__back {
   transition: all 0.2s ease-in;
   transition-delay: 0.2s;
+}
+
+.card__back:hover,
+.card__front,
+.card {
+  outline: none !important;
 }
 
 /* buttons */
@@ -73,15 +94,18 @@ button.reveal-cards-button:hover {
 .game-options__separator {
   margin-top: 30px;
 }
-.game-options__points {
-  color: #333333;
-  font-size: 18px;
+.game-options__points, .game-options__turns {
   align-self: center;
+  border-radius: 7px;
+  padding: 10px 20px;
+  color: #333333;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-.game-options__turns {
-  color: #333333;
-  font-size: 18px;
-  align-self: center;
+.game-options__points {
+  padding-left: 0;
+  padding-right: 40px;
 }
 
 /* game over */
