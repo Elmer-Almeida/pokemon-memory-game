@@ -8,7 +8,7 @@ Note: This application is not optimized for mobile devices.
 
 ## Demo
 
-(pokemon-memory-game-elmer.herokuapp.com)[https://pokemon-memory-game-elmer.herokuapp.com/]
+Visit: [Heroku App](https://pokemon-memory-game-elmer.herokuapp.com/)
 
 ## How to use?
 
@@ -22,6 +22,6 @@ npm start
 
 Click on a card to reveal the face, match the face with another card with the same face.
 
-### Contact
+## Contact
 
 If you have any questions or concerns, [send me an email](mailto:almeielm@sheridancollege.ca).
