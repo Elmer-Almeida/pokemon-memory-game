@@ -8,7 +8,7 @@ Note: This application is not optimized for mobile devices.
 
 ## Demo
 
-Visit: [Heroku App](https://pokemon-memory-game-elmer.herokuapp.com/)
+Visit: [Heroku App - Pokemon Memory Game](https://pokemon-memory-game-elmer.herokuapp.com/)
 
 ## How to use?
 
