@@ -2,9 +2,7 @@
 
 This is a simple Pokemon&copy; memory game built with React and Typescript.
 
-You can create a new game, reveal all cards, track your turns and points.
-
-Note: This application is not optimized for mobile devices.
+You can start a new game, reveal individual and all cards, as well as track your turns and points.
 
 ## Demo
 
@@ -12,11 +10,15 @@ Visit: [Heroku App - Pokemon Memory Game](https://pokemon-memory-game-elmer.hero
 
 ## How to use?
 
-Once you download the repository, `cd` into it, and run the following command:
+Once you clone the repository, `cd` into it, and run `npm start`.
 
 ```sh
+gh repo clone Elmer-Almeida/pokemon-memory-game memory-game
+cd memory-game
 npm start
 ```
+
+Visit the following URL in your browser: `http://localhost:3000/`
 
 ## How to play?
 
@@ -24,4 +26,4 @@ Click on a card to reveal the face, match the face with another card with the sa
 
 ## Contact
 
-If you have any questions or concerns, [send me an email](mailto:almeielm@sheridancollege.ca).
+Send me an email: Elmer Almeida - [almeielm@sheridancollege.ca](mailto:almeielm@sheridancollege.ca).

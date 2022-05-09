@@ -1,77 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+
+:root {
+    --default-font: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --white: #ffffff;
+    --red: #ff0353;
+    --light-purple: #79589f;
+    --dark-purple: #3a2878;
+    --dark-blue: #2a354a;
+    --dark-gray: #333333;
+}
 
 /* general */
 body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  background-color :#f7f4fb;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /*background-color:#f7f4fb;*/
+    background-color: var(--white);
+    font-family: var(--default-font);
+}
+
+.content {
+    padding: 10px;
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* header */
 h1.headline {
-  color: #333333;
-  text-align: center;
-  font-family: 'Dancing Script';
+    color: var(--dark-gray);
+    text-align: center;
+    font-family: "Dancing Script", serif;
 }
+
 p.about {
-  color: #333333;
-  text-align: center;
+    font-size: 15px;
+    color: var(--dark-gray);
+    text-align: center;
+    line-height: 1.5rem;
 }
-p.warning {
-  color: #333333;
-  text-align: center
-}
-p.warning span.bold {
-  font-weight: bold;
-  color: #cd0000;
+
+p.about span.bold {
+    font-weight: bold;
+    color: var(--red);
 }
 
 /* buttons */
 .new-game-button {
-  margin: 25px auto;
-  display: block;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  border-radius: 5px;
-  background-color: #79589f;
-  transition: all 0.2s ease-in-out;
+    margin: 25px auto;
+    display: block;
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: var(--light-purple);
+    transition: all 0.2s ease-in-out;
+    font-family: var(--default-font);
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 18%);
 }
 
 .new-game-button:hover {
-  cursor: pointer;
-  background-color: #3a2878;
+    cursor: pointer;
+    background-color: var(--dark-purple);
 }
 
 /* footer */
 footer {
     margin-top: auto;
-    background-color: #202529;
-    color: #f9f9fb;
+    background-color: var(--dark-blue);
+    color: var(--white);
     height: 100%;
     width: 100%;
+    font-family: var(--default-font);
+
+    box-shadow: 0 -3px 10px -3px var(--dark-blue);
 }
+
 footer > p {
     margin: 0;
     text-align: center;
-    padding: 15px 0;
     font-weight: normal;
+    font-size: 14px;
 }
-footer > p > a {
-  color: #ffffff;
-  text-decoration: none;
+
+footer p.icons {
+    margin: 0;
+    padding: 20px 0 15px 0;
+    font-size: 20px;
 }
+
+footer p.icons a {
+    color: var(--white);
+    padding: 0 10px 0 10px;
+}
+
+footer p.icons a:first-child {
+    padding-left: 0;
+}
+
+footer p.icons a:last-child {
+    padding-right: 0;
+}
+
+footer p.createdby {
+    padding: 0 0 20px 0;
+}
+
+footer p.contact {
+    padding: 0 0 15px 0;
+}
+
+footer > p.contact > a {
+    color: var(--white);
+    text-decoration: none;
+}
+
 footer > p > a:hover {
-  text-decoration: underline;
-  cursor: pointer;
+    text-decoration: underline;
+    cursor: pointer;
 }
+
