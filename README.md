@@ -26,4 +26,4 @@ Click on a card to reveal the face, match the face with another card with the sa
 
 ## Contact
 
-Send me an email: Elmer Almeida - [almeielm@sheridancollege.ca](mailto:almeielm@sheridancollege.ca).
+Send me an email: Elmer Almeida - [contact@elmeralmeida.dev](mailto:contact@elmeralmeida.dev).
